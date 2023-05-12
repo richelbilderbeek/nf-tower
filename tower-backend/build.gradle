@@ -45,38 +45,38 @@ configurations {
 
 
 dependencies {
-    compile "io.micronaut:micronaut-runtime-groovy"
-    compile "io.micronaut:micronaut-validation"
-    compile "io.micronaut:micronaut-http-client"
-    compile "io.micronaut:micronaut-http-server-netty"
+    implementation "io.micronaut:micronaut-runtime-groovy"
+    implementation "io.micronaut:micronaut-validation"
+    implementation "io.micronaut:micronaut-http-client"
+    implementation "io.micronaut:micronaut-http-server-netty"
     
-    compile "io.micronaut.configuration:micronaut-hibernate-gorm"
+    implementation "io.micronaut.configuration:micronaut-hibernate-gorm"
     runtime 'mysql:mysql-connector-java:8.0.16'
     runtime "com.h2database:h2:1.4.199"
-    compile 'de.ruedigermoeller:fst:2.57'
-    compile "javax.activation:activation:1.1.1"
-    compile "javax.mail:mail:1.4.7"
-    compile "org.jsoup:jsoup:1.11.2"
-    compile "org.apache.commons:commons-text:1.6"
-    compile "org.codehaus.groovy:groovy-json:2.5.8"
-    compile "org.codehaus.groovy:groovy-dateutil:2.5.8"
-    compile "org.codehaus.groovy:groovy-datetime:2.5.8"
-    compile "org.codehaus.groovy:groovy-templates:2.5.8"
-    compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8"
-    compile "io.github.resilience4j:resilience4j-ratelimiter:0.17.0"
-    compile 'org.hashids:hashids:1.0.3'
-    compile 'com.devskiller.friendly-id:friendly-id:1.1.0'
-    compile 'com.google.guava:guava:21.0'
+    implementation 'de.ruedigermoeller:fst:2.57'
+    implementation "javax.activation:activation:1.1.1"
+    implementation "javax.mail:mail:1.4.7"
+    implementation "org.jsoup:jsoup:1.11.2"
+    implementation "org.apache.commons:commons-text:1.6"
+    implementation "org.codehaus.groovy:groovy-json:2.5.8"
+    implementation "org.codehaus.groovy:groovy-dateutil:2.5.8"
+    implementation "org.codehaus.groovy:groovy-datetime:2.5.8"
+    implementation "org.codehaus.groovy:groovy-templates:2.5.8"
+    implementation "com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.9.8"
+    implementation "io.github.resilience4j:resilience4j-ratelimiter:0.17.0"
+    implementation 'org.hashids:hashids:1.0.3'
+    implementation 'com.devskiller.friendly-id:friendly-id:1.1.0'
+    implementation 'com.google.guava:guava:21.0'
 
     compileOnly "io.micronaut:micronaut-inject-groovy"
 
     annotationProcessor "io.micronaut:micronaut-security"
-    compile "io.micronaut:micronaut-security"
-    compile "io.micronaut:micronaut-security-jwt"
+    implementation "io.micronaut:micronaut-security"
+    implementation "io.micronaut:micronaut-security-jwt"
 
-    compile "ch.qos.logback:logback-classic:1.2.3"
+    implementation "ch.qos.logback:logback-classic:1.2.3"
 
-    compile "io.swagger.core.v3:swagger-annotations"
+    implementation "io.swagger.core.v3:swagger-annotations"
 
     testCompileOnly "io.micronaut:micronaut-inject-groovy"
     testCompile("org.spockframework:spock-core") {
